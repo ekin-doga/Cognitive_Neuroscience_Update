@@ -21,6 +21,18 @@ CNU/Week3/images/
 
 Object names must not contain an underscore (`teddybear`, not `teddy_bear`).
 
+For section 6 ("When toys *do* work"), a second folder holds four objects as photo and toy:
+
+```
+CNU/Week3/toys/
+├── zebra_photo.jpg    zebra_toy.jpg
+├── panda_photo.jpg    panda_toy.jpg      # giant panda, plush panda
+├── plane_photo.jpg    plane_toy.jpg      # airliner, toy plane
+└── banana_photo.jpg   banana_toy.jpg     # banana, plush banana
+```
+These are the eight images of the old Week 4 folder (`CNU/Week4/images/`). The names must be exactly `<object>_photo` and `<object>_toy`; the correct ImageNet label for each object is set in `TOY_OBJECTS` at the top of section 6.
+
+
 ### Choosing the images
 - **Objects:** zebra and plane. Zebra has a single ImageNet class (no species problem). For the plane, use an `airliner` photo; note that the ImageNet label `plane` is the carpenter's tool.
 - **Drawings:** make wide or tall drawings square by adding white space around them, so the centre crop does not cut off the nose or tail.
