@@ -6,3 +6,6 @@ Schedule/
 
 # Week image folders
 **/images/
+
+# Week 9 memorability table (loaded from Sciebo)
+**/art_memorability.csv
