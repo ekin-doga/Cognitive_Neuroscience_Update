@@ -1,4 +1,4 @@
-## Week 4 – Trained vs untrained AlexNet
+## Week 4 – Hierarchical processing in AlexNet
 
 ### Data on Sciebo
 ```
@@ -8,9 +8,8 @@ CNU/Week4/animals_objects/      # 120 images: 3 kinds × 4 concepts × 10 photos
 ├── fruit_banana_1.jpg …        # fruit:   banana, pineapple, strawberry, orange
 ├── object_teapot_1.jpg …       # objects: teapot, violin, backpack, mailbox
 └── …
-CNU/Week3/images/zebra_photo.jpg, plane_photo.jpg   # reused for the classification part
 ```
-File names must be `<kind>_<concept>_<number>.<ext>`, with no underscores inside the parts. The notebook reads kinds, concepts and the number of photos from the file names, so another set only needs other files (add a new kind to `KINDS` at the top of section 5).
+File names must be `<kind>_<concept>_<number>.<ext>`, with no underscores inside the parts. The notebook reads kinds, concepts and the number of photos from the file names, so another set only needs other files (add a new kind to `KINDS` in section 3).
 
 The images were chosen from `Selection20_resized` with `Stimuli_hunt/Week4_selection/week4_animal_object_selection.ipynb` (not part of this repo). That notebook also exports `selection.csv` with the original file name and source of every image.
 
