@@ -14,14 +14,12 @@ CNU/Week3/images/
 ├── plane_photo.jpg
 ├── plane_drawing.png
 ├── plane_outline.png
-├── plane_toy.jpg
-├── unknown_giraffe.jpg   # an animal with no ImageNet label
-└── unknown_helicopter.jpg  # a vehicle with no ImageNet label
+└── plane_toy.jpg
 ```
 
 Object names must not contain an underscore (`teddybear`, not `teddy_bear`).
 
-For section 6 ("When toys *do* work"), a second folder holds four objects as photo and toy:
+For section 4 ("When toys *do* work"), a second folder holds four objects as photo and toy:
 
 ```
 CNU/Week3/toys/
@@ -30,14 +28,13 @@ CNU/Week3/toys/
 ├── plane_photo.jpg    plane_toy.jpg      # airliner, toy plane
 └── banana_photo.jpg   banana_toy.jpg     # banana, plush banana
 ```
-These are the eight images of the old Week 4 folder (`CNU/Week4/images/`). The names must be exactly `<object>_photo` and `<object>_toy`; the correct ImageNet label for each object is set in `TOY_OBJECTS` at the top of section 6.
+These are the eight images of the old Week 4 folder (`CNU/Week4/images/`). The names must be exactly `<object>_photo` and `<object>_toy`; the correct ImageNet label for each object is set in `TOY_OBJECTS` at the top of section 4.
 
 
 ### Choosing the images
 - **Objects:** zebra and plane. Zebra has a single ImageNet class (no species problem). For the plane, use an `airliner` photo; note that the ImageNet label `plane` is the carpenter's tool.
 - **Drawings:** make wide or tall drawings square by adding white space around them, so the centre crop does not cut off the nose or tail.
 - **Toys:** ImageNet has toy-like labels such as "teddy bear" and "toyshop", so a plush zebra may come out as "teddy bear". Check your images first, and then use the result in the discussion.
-- **Unknown things:** another animal and another vehicle with no ImageNet label, e.g. a giraffe and a helicopter. Check each one with `find_labels()` in the notebook.
 
 ### Credits
 > Lindsay, G. W. (2021). Convolutional neural networks as a model of the visual system: Past, present, and future. *Journal of Cognitive Neuroscience, 33*(10), 2017–2031.
