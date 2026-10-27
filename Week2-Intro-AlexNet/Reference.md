@@ -4,6 +4,7 @@
 ```
 CNU/Week2/
 ├── example.jpg              # the one image students classify
+├── kitten.jpg               # the kitten from the architecture diagram (section 2), classified in section 4
 ├── unknown_giraffe.jpg      # an animal with no ImageNet label
 └── unknown_helicopter.jpg   # a vehicle with no ImageNet label
 ```
