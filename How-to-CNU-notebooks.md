@@ -34,6 +34,8 @@ In JupyterLab, open **File → New → Terminal** and run:
 git clone https://github.com/ekin-doga/Cognitive_Neuroscience_Update.git
 ```
 
+(Type or paste this as **one line**.)
+
 This creates a folder `Cognitive_Neuroscience_Update` with one folder per week, e.g. `Week3-Lindsay2021/CNU_Week3.ipynb`.
 
 You only do this **once**. Don't run `git clone` again. It would fail, because the folder already exists.
@@ -42,18 +44,21 @@ You only do this **once**. Don't run `git clone` again. It would fail, because t
 
 ```bash
 cd ~/Cognitive_Neuroscience_Update
+git restore .
 git pull
 ```
 
 This downloads new weeks and any changes to earlier notebooks. The notebooks may be updated during the semester (fixes, new exercises), so pull every time.
 
-`git pull` only updates the notebooks. 
+`git restore .` resets the notebooks to their original state. Running a notebook saves its outputs into the file, and without this step `git pull` would refuse to update. This also removes your outputs and any edits you made to the notebooks.
 
-Note: If you want to keep a copy of the notebook you should download it. 
+`git pull` only updates the notebooks.
+
+Note: If you want to keep a copy of the notebook with your outputs, download it before running these commands.
 
 ---
 ## 3. Run the first notebook
 
 1. Go here in the folder tree: /Cognitive_Neuroscience_Update/Week2-Intro-AlexNet/
 2. Click on CNU_Week2.ipynb
-3. Click on the run (marked with red rectangle) and see whether everything runs without an error
+3. Click into the first cell and press the run button ▶ (marked with a red rectangle), or press **Shift + Enter**. This runs the cell and moves to the next one. Go through the notebook cell by cell and check that each cell runs without an error.
